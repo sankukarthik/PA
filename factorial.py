@@ -7,6 +7,14 @@ def factorial(n):
         result *= i
     return result
 
+def add_numbers(a, b):
+    """Return the sum of two numbers."""
+    return a + b
+
 if __name__ == "__main__":
     num = int(input("Enter a non-negative integer: "))
     print(f"Factorial of {num} is {factorial(num)}")
+
+    a = int(input("Enter first number to add: "))
+    b = int(input("Enter second number to add: "))
+    print(f"Sum of {a} and {b} is {add_numbers(a, b)}")
